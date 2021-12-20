@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>BST</h1>
+    <form action="#" th:action="@{/result}" th:object="${bst}" method="post">
+    	<label>Enter numbers, separate by commas.</label>
+        <input type="text" th:field="*{numbers}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
